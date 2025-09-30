@@ -1,78 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- /* siempre ligar el stylo para los cambios dentro de la pagina*/ -->
-    <link rel="stylesheet" href="styles3.css">
-<!-- Fondo y estilos -->
-    <style>
-      body {
-        background: linear-gradient(135deg, #a5d6a7, #f5f5dc); /* Verde suave a beige */
-        font-family: Arial, sans-serif;
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Campestre - Instalaciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles3.css">
 
-      /* Ajuste de texto */
-      section h2 {
-        color: #2e7d32;
-        font-weight: bold;
-      }
-      section p {
-        color: #444;
-      }
+  <style>
+    body {
+      background: linear-gradient(135deg, #a5d6a7, #f5f5dc);
+      font-family: Arial, sans-serif;
+    }
 
-      /* Animación suave en los enlaces */
-      .animated-link {
-        position: relative;
-        transition: all 0.3s ease;
-      }
-      .animated-link::after {
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #ffc107;
-        transition: all 0.3s ease-in-out;
-      }
-      .animated-link:hover {
-        color: #ffc107 !important;
-        transform: translateY(-2px);
-      }
-      .animated-link:hover::after {
-        width: 100%;
-      }
+    /* Sección principal */
+    section h2 {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    section p {
+      color: #444;
+    }
 
-      /* Botón animado */
-      .animated-btn {
-        transition: all 0.3s ease-in-out;
-        border-radius: 30px;
-        font-weight: bold;
-      }
-      .animated-btn:hover {
-        background-color: #ffca2c !important;
-        transform: scale(1.08);
-        box-shadow: 0px 4px 15px rgba(255, 193, 7, 0.7);
-      }
+    /* Links animados */
+    .animated-link {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .animated-link::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffc107;
+      transition: all 0.3s ease-in-out;
+    }
+    .animated-link:hover {
+      color: #ffc107 !important;
+      transform: translateY(-2px);
+    }
+    .animated-link:hover::after {
+      width: 100%;
+    }
 
-      /* Carrusel */
+    /* Botón animado */
+    .animated-btn {
+      transition: all 0.3s ease-in-out;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .animated-btn:hover {
+      background-color: #ffca2c !important;
+      transform: scale(1.08);
+      box-shadow: 0px 4px 15px rgba(255, 193, 7, 0.7);
+    }
+
+    /* Carrusel */
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
       .carousel-item img {
-        height: 500px;
-        object-fit: cover;
-        border-radius: 10px;
+        height: 250px;
       }
-      @media (max-width: 768px) {
-        .carousel-item img {
-          height: 250px;
-        }
-      }
-    </style>
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="Imagenes/Logo1.jpg" alt="Logo de la casa campestre" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link animated-link" href="instalaciones.html">🏡 Instalaciones</a></li>
+          <li class="nav-item"><a class="nav-link animated-link" href="Zona Humeda.html">💧 Zona Húmeda</a></li>
+          <li class="nav-item"><a class="nav-link animated-link" href="granja.html">🐓 Granja</a></li>
+          <li class="nav-item"><a class="nav-link animated-link" href="zonapesca.html">🎣 Zona de Pesca</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning text-dark px-3 ms-2 animated-btn" href="contacto.html">
+              📩 Contacto y Reservas
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Bienvenida -->
+  <section class="container text-center text-md-start my-5">
+    <h2 class="fw-bold mb-3">Nuestras Instalaciones</h2>
+    <p class="text-muted lead">
+      Bienvenido a tu lugar ideal de descanso y diversión.  
+      Nuestra casa campestre ofrece la combinación perfecta de comodidad, naturaleza y entretenimiento, pensada para que disfrutes momentos inolvidables en compañía de tu familia y amigos.
+    </p>
+  </section>
+
+  <!-- Carrusel -->
+  <div id="carouselExample" class="carousel slide container my-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/casa1.jpg" class="d-block w-100" alt="Vista de la casa campestre">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/piscina.jpg" class="d-block w-100" alt="Piscina de la zona húmeda">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/granja.jpg" class="d-block w-100" alt="Granja con animales">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
     
 <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -262,6 +321,7 @@
   }
   
 </style>
+
 
 
 
